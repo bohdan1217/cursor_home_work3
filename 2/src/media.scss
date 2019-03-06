@@ -1,0 +1,16 @@
+@media only screen and (max-width: 1550px) {
+
+  .main-carousel-slide{
+      &.__spider-man{
+          .main-title{
+            font-size: 106px;
+          }
+      }
+      &.__captain{
+          .main-title{
+            font-size: 84px;
+          }
+      }
+  }
+
+}

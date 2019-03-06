@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Teko:300|Roboto:300');
+
+* { padding: 0; margin: 0; border: 0; }
+
+#allinone {display: flex; justify-content: center; background: black;}
+.container {
+  width: 720px;
+  background: red;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  background: rgb(116,140,171);
+  color: #fff;
+}
+
+.row{
+  background: linear-gradient(#546F8B, #374556);
+  width: 720px;
+}
+
+.block{    
+  /*background: linear-gradient(#546F8B, #374556);
+  border: solid 2px #5D7695;*/
+  padding: 10px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  width: 120px;  
+  float: left;
+}
+
+.header {
+  display: flex;
+  background-image: linear-gradient(to bottom, rgb(131,151,185), rgb(90,112,137));
+  border: 2px rgb(98,118,146) solid;
+}
+.header-text {
+  padding: 10px;
+}
+.header-title { font-size: 12px; }
+.header-value {
+  font-family: 'Teko', sans-serif;
+  font-size: 35px;
+  line-height: 30px;
+  margin-top: 6px;
+}
+.header-value span {
+  color: rgb(183,232,238);
+}
+
+#crew-block{
+  background: #98B5D3;
+}
+
+#crew-block .header-value {
+  text-transform: uppercase;
+}
+.header-icon {
+  display: flex;
+  align-self: center;
+  height: 60%;
+}
+
+.icon {
+  display: inline-block;
+  background: rgb(183,232,238);
+  width: 10px;
+  height: 10px;
+}
+.icon.icon-minus {
+  width: 18px;
+  height: 8px;
+}
+.icon.icon-arrow-bottom {
+  width: 8px;
+  height: 18px;
+}
+
+.planet-view-image{
+  width:720px;
+}
+
+.small{
+  font-family: "Roboto";
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.time-large{
+  font-family: "Teko", sans-serif;
+  font-size: 54px;
+  color: #ffffff;
+}
+
+.time-large2{
+  font-family: "Teko", sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+#current-time{
+  font-size: 25px;
+  width: 229px;
+  padding-left: 10px;
+  background-image: linear-gradient(to bottom, rgb(131,151,185), rgb(90,112,137));
+}
+
+.second-block{
+  background: linear-gradient(#374556, #546F8B);
+  width: 130px; 
+  border: solid 2px  rgb(98,118,146); 
+  float: left;
+  height: 120px;
+  padding-left: 25px;
+}
+
+.literal{
+  color: #A2EDF2
+}
+
+.row.row-double-header {
+  display: flex;
+}
+.row.row-double-header .header {
+  background: rgb(130,161,195);
+  padding: 10px 15px;
+  border: 1px rgb(92,120,155) solid;
+}
+.row.row-double-header .header.header-first {
+  flex-grow: 2;
+}
+.row.row-double-header .header.header-second {
+  flex-grow: 1;
+}
+
+#progress-value {
+  background: rgb(156,237,241);
+  height: 25px;
+  width: 30%;
+  transition: all 1s ease-in-out;
+}
+
+#nb{
+  float: left;
+}
+
+.approach {
+  font-size: 13px;
+  position: relative;
+}
+.approach-row {
+  display: flex;
+  flex-direction: row;
+}
+.approach-cell {
+  /*flex-grow: 1;*/
+  flex-basis: 10%;
+  padding: 10px 12px;
+  border-right: 2px rgb(86,114,149) solid;
+  border-bottom: 2px rgb(86,114,149) solid;
+  z-index: 3;
+}
+.approach-progress {
+  position: absolute;
+  background: rgb(156,237,241);
+  width: 3px;
+  height: 100%;
+  top: 0px;
+  left: 56%;
+  transition: left 1s linear;
+  z-index: 3;
+}
+.approach-block {
+  position: absolute;
+  height: 33px;
+  margin-top: 1px;
+  background: rgb(150,183,216);
+  transition: left 2s linear;
+  z-index: 2;
+}
+.approach-block-current {
+  background: rgb(156,237,241);
+}
+.approach-block.b-1 {
+  width: 30px;
+  left: 13%;  
+}
+.approach-block.b-2 {
+  width: 25px;
+  left: 23%;  
+}
+.approach-block.b-3 {
+  width: 85px;
+  left: 43%;
+}
+.approach-block.b-4 {
+  width: 55px;
+  left: 50%;
+}
+.approach-block.b-5 {
+  width: 35px;
+  left: 31%;
+}
+
+.approach-row-timeline {
+  background: transparent;
+  height: 30px;
+}
+.approach-row-timeline .approach-cell {
+  border: none;
+  margin-left: 40px;
+  margin-top: -5px;
+  font-size: 10px;
+}
+
+/* ------------------------------------
+
+
+.block-label{
+  font-family: "Roboto";
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.block-title{
+  font-family: "Teko";
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.block-icon{
+  display: flex;
+  align-self: center;
+  height: 60%;
+  color: "green";
+}
+
+*/
